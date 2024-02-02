@@ -8,8 +8,8 @@ Tabla de contenidos:
 
 
 /* ----- Fuente ----- */
-@import url("https://fonts.googleapis.com/css?family=Merryweather&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merryweather:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700&display=swap");
 
 
 /* ----- Variables ----- */
@@ -38,7 +38,7 @@ Tabla de contenidos:
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
 body {
-	font-family: var(--primary-font-family);
+	font-family: var(--body-font-family);
 	background-color: var(--body-bg-color);
 	color: var(--text-color);
 	font-size: var(--fs-text);
@@ -63,6 +63,7 @@ body {
 
 #analytics-card {
 	height: 100vh;
+	font-size: 1rem;
 	background-color: var(--body-bg-color);
 	display: flex;
 	justify-content: center;
@@ -87,8 +88,9 @@ body {
 }
 
 .card-header-title {
+	font-family: var(--title-font-family);
 	padding-bottom: 15px;
-	font-size: xx-large;
+	font-size: x-large;
 	font-weight: 800;
 }
 
@@ -291,7 +293,11 @@ body {
 	.progress-info-more {
 		text-align: right;
 		width: 100%;
-		color: #3363d0;
+
+	}
+
+	.progress-info-more a {
+		color: rgb(81, 127, 235);
 	}
 
 }
