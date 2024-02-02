@@ -72,7 +72,7 @@ body {
 }
 
 .card {
-	padding: 50px;
+	padding: 20px;
 	background-color: var(--card-bg-color);
 	width: fit-content;
 	border-radius: 25px;
@@ -113,8 +113,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 30px;
-	margin-top: 10px;
 }
 
 .progress-info {
@@ -245,6 +243,9 @@ body {
 @media (min-width:576px) {}
 
 @media (min-width:768px) {
+	.card {
+		padding: 20px;
+	}
 
 	.card-body {
 		display: flex;
@@ -253,8 +254,13 @@ body {
 		margin-top: 20px;
 	}
 
-	.progress-info {
+	.progress {
 
+		margin-top: 10px;
+	}
+
+	.progress-info {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 
@@ -304,7 +310,14 @@ body {
 
 }
 
-@media (min-width:992px) {}
+@media (min-width:992px) {
+
+	.progress {
+
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+}
 
 /* *********---- Desktop ----********* */
 @media (min-width:1200px) {}
