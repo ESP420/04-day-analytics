@@ -311,6 +311,9 @@ body {
 }
 
 @media (min-width:992px) {
+	.card {
+		padding: 50px;
+	}
 
 	.progress {
 
