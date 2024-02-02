@@ -113,6 +113,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-left: 30px;
+	margin-top: 10px;
 }
 
 .progress-info {
@@ -214,28 +216,28 @@ body {
 .skillbars .bar.one:after {
 	height: 5px;
 	border-radius: 25px;
-	background: var(--blue-color-1);
+	background: var(--blue-color-2);
 	width: var(--first-value);
 }
 
 .skillbars .bar.two:after {
 	height: 5px;
 	border-radius: 25px;
-	background: var(--blue-color-2);
+	background: var(--blue-color-3);
 	width: var(--second-value);
 }
 
 .skillbars .bar.tree:after {
 	height: 5px;
 	border-radius: 25px;
-	background: var(--blue-color-3);
+	background: var(--blue-color-4);
 	width: var(--third-value);
 }
 
 .skillbars .bar.four:after {
 	height: 5px;
 	border-radius: 25px;
-	background: var(--blue-color-4);
+	background: var(--blue-color-1);
 	width: var(--fourth-value);
 }
 
@@ -264,7 +266,7 @@ body {
 		position: relative;
 		grid-area: bar;
 		display: grid;
-		grid-template-columns: auto 200px 50px;
+		grid-template-columns: auto 250px 50px;
 		grid-template-areas: "title bar value";
 
 	}
@@ -297,7 +299,7 @@ body {
 	}
 
 	.progress-info-more a {
-		color: rgb(81, 127, 235);
+		color: var(--blue-color-3);
 	}
 
 }
